@@ -97,7 +97,8 @@ import static io.wazo.callkeep.Constants.ACTION_SHOW_INCOMING_CALL_UI;
 import static io.wazo.callkeep.Constants.ACTION_ON_SILENCE_INCOMING_CALL;
 import static io.wazo.callkeep.Constants.ACTION_ON_CREATE_CONNECTION_FAILED;
 import static io.wazo.callkeep.Constants.ACTION_DID_CHANGE_AUDIO_ROUTE;
-
+import 	android.widget.Toast;
+ 
 // @see https://github.com/kbagchiGWC/voice-quickstart-android/blob/9a2aff7fbe0d0a5ae9457b48e9ad408740dfb968/exampleConnectionService/src/main/java/com/twilio/voice/examples/connectionservice/VoiceConnectionServiceActivity.java
 public class RNCallKeepModule extends ReactContextBaseJavaModule {
     public static final int REQUEST_READ_PHONE_STATE = 1337;
@@ -308,8 +309,9 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void displayIncomingCall(String uuid, String number, String callerName) {
-        String appName = this.getApplicationName(this.getAppContext());
 
+        String appName = this.getApplicationName(this.getAppContext());
+    
         PhoneAccount.Builder builder = new PhoneAccount.Builder(handle, appName);
         builder.setCapabilities(PhoneAccount.CAPABILITY_CALL_PROVIDER);
 
@@ -326,6 +328,32 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
         extras.putString(EXTRA_CALL_UUID, uuid);
 
         telecomManager.addNewIncomingCall(handle, extras);
+        
+        // Context context = this.getAppContext();
+        // String packageName  = context.getPackageName();
+        // Intent launchIntent = context.getPackageManager().getLaunchIntentForPackage(packageName);
+        // String className    = launchIntent.getComponent().getClassName();
+        // Toast.makeText(context,className,Toast.LENGTH_SHORT).show();  
+
+        // try {
+           
+        //     Class<?> activityClass = Class.forName(className);
+        //     Intent activityIntent = new Intent(context, activityClass);
+
+        //     activityIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        //     context.startActivity(activityIntent);
+        // } catch(Exception e) {
+        //     Log.e(TAG,"Class not found", e);  
+        //     return;
+        // }
+        
+        // Context context = this.getAppContext();
+
+        // Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com"));
+        // intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+        // context.startActivity(intent);
+        
     }
 
     @ReactMethod
@@ -390,11 +418,13 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void endAllCalls() {
+        Context context = this.getAppContext();
+        //Toast.makeText(context,"end call",Toast.LENGTH_SHORT).show();  
         Log.d(TAG, "[RNCallKeepModule] endAllCalls called");
-        if (!isConnectionServiceAvailable() || !hasPhoneAccount()) {
-            Log.w(TAG, "[RNCallKeepModule] endAllCalls ignored due to no ConnectionService or no phone account");
-            return;
-        }
+        // if (!isConnectionServiceAvailable() || !hasPhoneAccount()) {
+        //     Log.w(TAG, "[RNCallKeepModule] endAllCalls ignored due to no ConnectionService or no phone account");
+        //     return;
+        // }
 
         ArrayList<Map.Entry<String, VoiceConnection>> connections =
             new ArrayList<Map.Entry<String, VoiceConnection>>(VoiceConnectionService.currentConnections.entrySet());
