@@ -2471,6 +2471,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_answer
+layout activity_reject
 layout autofill_inline_suggestion
 layout content_answer
 layout custom_dialog

@@ -15,6 +15,9 @@
 
     <application>
         <activity
+            android:name="io.wazo.callkeep.RejectActivity"
+            android:exported="false" />
+        <activity
             android:name="io.wazo.callkeep.AnswerActivity"
             android:exported="false" />
     </application>

@@ -380,6 +380,12 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
         telecomManager.placeCall(uri, extras);
     }
 
+    private void closeIncomingCallNotification(){
+        Context context = this.getAppContext();
+        NotificationManager notificationManager = context.getSystemService(NotificationManager.class);
+        notificationManager.cancel(14);
+    }
+
     @ReactMethod
     public void endCall(String uuid) {
         Log.d(TAG, "[RNCallKeepModule] endCall called, uuid: " + uuid);
@@ -397,17 +403,20 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
         AudioManager audioManager = (AudioManager) context.getSystemService(context.AUDIO_SERVICE);
         audioManager.setMode(0);
         conn.onDisconnect();
-
+        closeIncomingCallNotification();
         Log.d(TAG, "[RNCallKeepModule] endCall executed, uuid: " + uuid);
     }
 
     @ReactMethod
     public void endAllCalls() {
         Log.d(TAG, "[RNCallKeepModule] endAllCalls called");
+        /*
         if (!isConnectionServiceAvailable() || !hasPhoneAccount()) {
             Log.w(TAG, "[RNCallKeepModule] endAllCalls ignored due to no ConnectionService or no phone account");
             return;
         }
+
+         */
 
         ArrayList<Map.Entry<String, VoiceConnection>> connections =
             new ArrayList<Map.Entry<String, VoiceConnection>>(VoiceConnectionService.currentConnections.entrySet());
@@ -415,7 +424,7 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
             Connection connectionToEnd = connectionEntry.getValue();
             connectionToEnd.onDisconnect();
         }
-
+        closeIncomingCallNotification();
         Log.d(TAG, "[RNCallKeepModule] endAllCalls executed");
     }
 

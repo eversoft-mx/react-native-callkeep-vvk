@@ -366,7 +366,7 @@ public class VoiceConnection extends Connection {
         acceptIntent.putExtra("call_uuid",this.callUuid);
         PendingIntent acceptPendingIntent = PendingIntent.getActivity(context, 0, acceptIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
 
-        Intent rejectIntent = new Intent(context, VoiceConnectionService.class);
+        Intent rejectIntent = new Intent(context, RejectActivity.class);
         rejectIntent.putExtra("call_uuid",this.callUuid);
         PendingIntent rejectPendingIntent = PendingIntent.getActivity(context, 0, rejectIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
 

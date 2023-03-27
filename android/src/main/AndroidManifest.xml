@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.wazo.callkeep" >
+    package="io.wazo.callkeep">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission
@@ -10,6 +10,9 @@
     <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
 
     <application>
+        <activity
+            android:name=".RejectActivity"
+            android:exported="false" />
         <activity
             android:name=".AnswerActivity"
             android:exported="false" />

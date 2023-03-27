@@ -15,6 +15,7 @@ id nav_host_fragment_content_answer
 id textview_first
 id textview_second
 layout activity_answer
+layout activity_reject
 layout content_answer
 layout fragment_first
 layout fragment_second

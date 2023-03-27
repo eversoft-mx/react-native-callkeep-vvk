@@ -2470,6 +2470,7 @@ int layout abc_search_view 0x0
 int layout abc_select_dialog_material 0x0
 int layout abc_tooltip 0x0
 int layout activity_answer 0x0
+int layout activity_reject 0x0
 int layout autofill_inline_suggestion 0x0
 int layout content_answer 0x0
 int layout custom_dialog 0x0
