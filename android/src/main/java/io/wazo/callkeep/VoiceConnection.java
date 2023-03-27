@@ -18,8 +18,14 @@
 package io.wazo.callkeep;
 
 import android.annotation.TargetApi;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.media.AudioAttributes;
+import android.media.RingtoneManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -60,6 +66,8 @@ public class VoiceConnection extends Connection {
     private HashMap<String, String> handle;
     private Context context;
     private static final String TAG = "RNCallKeep";
+    private String name = "";
+    private String callUuid = "";
 
     VoiceConnection(Context context, HashMap<String, String> handle) {
         super();
@@ -68,7 +76,9 @@ public class VoiceConnection extends Connection {
 
         String number = handle.get(EXTRA_CALL_NUMBER);
         String name = handle.get(EXTRA_CALLER_NAME);
-
+        String callUuid = handle.get(EXTRA_CALL_UUID);
+        this.callUuid = callUuid;
+        this.name = name;
         if (number != null) {
             setAddress(Uri.parse(number), TelecomManager.PRESENTATION_ALLOWED);
         }
@@ -271,6 +281,11 @@ public class VoiceConnection extends Connection {
 
     @Override
     public void onSilence() {
+        // onSilence was added on API level 29
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
+            return;
+        }
+
         super.onSilence();
 
         sendCallRequestToActivity(ACTION_ON_SILENCE_INCOMING_CALL, handle);
@@ -329,6 +344,43 @@ public class VoiceConnection extends Connection {
     @Override
     public void onShowIncomingCallUi() {
         Log.d(TAG, "[VoiceConnection] onShowIncomingCallUi");
+
+        NotificationChannel channel = new NotificationChannel("INCOMING_CALL_CHANNEL", "Incoming Calls",
+                NotificationManager.IMPORTANCE_MAX);
+        Uri ringtoneUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
+        channel.setSound(ringtoneUri, new AudioAttributes.Builder()
+                .setUsage(AudioAttributes.USAGE_NOTIFICATION_RINGTONE)
+                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                .build());
+        NotificationManager mgr = context.getSystemService(NotificationManager.class);
+        mgr.createNotificationChannel(channel);
+
+        final Notification.Builder builder = new Notification.Builder(context,"INCOMING_CALL_CHANNEL");
+        builder.setOngoing(true);
+        builder.setPriority(Notification.PRIORITY_HIGH);
+        builder.setContentTitle("Llamada entrante");
+        builder.setContentText(this.name);
+        builder.setSmallIcon(R.drawable.baseline_phone_24);
+
+        Intent acceptIntent = new Intent(context, AnswerActivity.class);
+        acceptIntent.putExtra("call_uuid",this.callUuid);
+        PendingIntent acceptPendingIntent = PendingIntent.getActivity(context, 0, acceptIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
+
+        Intent rejectIntent = new Intent(context, VoiceConnectionService.class);
+        rejectIntent.putExtra("call_uuid",this.callUuid);
+        PendingIntent rejectPendingIntent = PendingIntent.getActivity(context, 0, rejectIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
+
+        builder.addAction(R.drawable.baseline_check_circle_24, "Aceptar", acceptPendingIntent);
+        builder.addAction(R.drawable.baseline_cancel_24, "Rechazar", rejectPendingIntent);
+
+        Notification notification = builder.build();
+        notification.flags |= Notification.FLAG_INSISTENT;
+
+        NotificationManager notificationManager = context.getSystemService(
+                NotificationManager.class);
+        notificationManager.notify(14, notification);
+
+
         sendCallRequestToActivity(ACTION_SHOW_INCOMING_CALL_UI, handle);
     }
 

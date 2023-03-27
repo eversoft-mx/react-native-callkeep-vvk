@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.Vivook.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Vivook.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Vivook.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

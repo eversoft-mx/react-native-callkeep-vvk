@@ -1,2 +1,31 @@
 R_DEF: Internal format may change without notice
 local
+dimen fab_margin
+drawable baseline_cancel_24
+drawable baseline_check_circle_24
+drawable baseline_phone_24
+id FirstFragment
+id SecondFragment
+id action_FirstFragment_to_SecondFragment
+id action_SecondFragment_to_FirstFragment
+id button_first
+id button_second
+id nav_graph
+id nav_host_fragment_content_answer
+id textview_first
+id textview_second
+layout activity_answer
+layout content_answer
+layout fragment_first
+layout fragment_second
+navigation nav_graph
+string first_fragment_label
+string hello_first_fragment
+string hello_second_fragment
+string next
+string previous
+string second_fragment_label
+string title_activity_answer
+style Theme.Vivook.AppBarOverlay
+style Theme.Vivook.NoActionBar
+style Theme.Vivook.PopupOverlay
