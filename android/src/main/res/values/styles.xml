@@ -1,0 +1,5 @@
+<resources>
+<style name="Theme.Vivook" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Agrega aquí los atributos específicos de este estilo -->
+</style>
+</resources>
