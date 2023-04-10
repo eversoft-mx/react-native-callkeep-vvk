@@ -319,6 +319,16 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
             return;
         }
 
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            String appName = this.getApplicationName(this.getAppContext());
+
+            PhoneAccount.Builder builder = new PhoneAccount.Builder(handle, appName);
+            builder.setCapabilities(PhoneAccount.CAPABILITY_CALL_PROVIDER);
+
+            PhoneAccount account = builder.build();
+            telecomManager.registerPhoneAccount(account);
+        } 
+
         Log.d(TAG, "[RNCallKeepModule] displayIncomingCall, uuid: " + uuid + ", number: " + number + ", callerName: " + callerName + ", hasVideo: " + hasVideo);
 
         Bundle extras = new Bundle();
@@ -403,7 +413,11 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
         AudioManager audioManager = (AudioManager) context.getSystemService(context.AUDIO_SERVICE);
         audioManager.setMode(0);
         conn.onDisconnect();
-        closeIncomingCallNotification();
+         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            telecomManager.unregisterPhoneAccount(handle);
+         }else{
+            closeIncomingCallNotification();
+         }
         Log.d(TAG, "[RNCallKeepModule] endCall executed, uuid: " + uuid);
     }
 
@@ -424,7 +438,11 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
             Connection connectionToEnd = connectionEntry.getValue();
             connectionToEnd.onDisconnect();
         }
-        closeIncomingCallNotification();
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.R) {
+            telecomManager.unregisterPhoneAccount(handle);
+         }else{
+            closeIncomingCallNotification();
+         }
         Log.d(TAG, "[RNCallKeepModule] endAllCalls executed");
     }
 
@@ -961,12 +979,13 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
         String appName = this.getApplicationName(context);
 
         PhoneAccount.Builder builder = new PhoneAccount.Builder(handle, appName);
-        if (isSelfManaged()) {
-            builder.setCapabilities(PhoneAccount.CAPABILITY_SELF_MANAGED);
-        }
-        else {
-            builder.setCapabilities(PhoneAccount.CAPABILITY_CALL_PROVIDER);
-        }
+        builder.setCapabilities(PhoneAccount.CAPABILITY_SELF_MANAGED);
+        // if (isSelfManaged()) {
+        //     builder.setCapabilities(PhoneAccount.CAPABILITY_SELF_MANAGED);
+        // }
+        // else {
+        //     builder.setCapabilities(PhoneAccount.CAPABILITY_CALL_PROVIDER);
+        // }
 
         if (_settings != null && _settings.hasKey("imageName")) {
             int identifier = appContext.getResources().getIdentifier(_settings.getString("imageName"), "drawable", appContext.getPackageName());

@@ -30,6 +30,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.telecom.CallAudioState;
 import android.telecom.Connection;
@@ -345,40 +346,43 @@ public class VoiceConnection extends Connection {
     public void onShowIncomingCallUi() {
         Log.d(TAG, "[VoiceConnection] onShowIncomingCallUi");
 
-        NotificationChannel channel = new NotificationChannel("INCOMING_CALL_CHANNEL", "Incoming Calls",
-                NotificationManager.IMPORTANCE_MAX);
-        Uri ringtoneUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
-        channel.setSound(ringtoneUri, new AudioAttributes.Builder()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            NotificationChannel channel = new NotificationChannel("INCOMING_CALL_CHANNEL", "Incoming Calls", NotificationManager.IMPORTANCE_HIGH);
+            Uri ringtoneUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
+            channel.setSound(ringtoneUri, new AudioAttributes.Builder()
                 .setUsage(AudioAttributes.USAGE_NOTIFICATION_RINGTONE)
                 .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
                 .build());
-        NotificationManager mgr = context.getSystemService(NotificationManager.class);
-        mgr.createNotificationChannel(channel);
+            NotificationManager mgr = context.getSystemService(NotificationManager.class);
+            mgr.createNotificationChannel(channel);
 
-        final Notification.Builder builder = new Notification.Builder(context,"INCOMING_CALL_CHANNEL");
-        builder.setOngoing(true);
-        builder.setPriority(Notification.PRIORITY_HIGH);
-        builder.setContentTitle("Llamada entrante");
-        builder.setContentText(this.name);
-        builder.setSmallIcon(R.drawable.baseline_phone_24);
+            final Notification.Builder builder = new Notification.Builder(context,"INCOMING_CALL_CHANNEL");
+            builder.setOngoing(true);
+            builder.setPriority(Notification.PRIORITY_HIGH);
+            builder.setCategory(NotificationCompat.CATEGORY_CALL);
+            builder.setContentTitle("Llamada entrante");
+            builder.setContentText(this.name);
+            builder.setSmallIcon(R.drawable.baseline_phone_24);
 
-        Intent acceptIntent = new Intent(context, AnswerActivity.class);
-        acceptIntent.putExtra("call_uuid",this.callUuid);
-        PendingIntent acceptPendingIntent = PendingIntent.getActivity(context, 0, acceptIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
+            Intent acceptIntent = new Intent(context, AnswerActivity.class);
+            acceptIntent.putExtra("call_uuid",this.callUuid);
+            PendingIntent acceptPendingIntent = PendingIntent.getActivity(context, 0, acceptIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
 
-        Intent rejectIntent = new Intent(context, RejectActivity.class);
-        rejectIntent.putExtra("call_uuid",this.callUuid);
-        PendingIntent rejectPendingIntent = PendingIntent.getActivity(context, 0, rejectIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
+            Intent rejectIntent = new Intent(context, RejectActivity.class);
+            rejectIntent.putExtra("call_uuid",this.callUuid);
+            PendingIntent rejectPendingIntent = PendingIntent.getActivity(context, 0, rejectIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
 
-        builder.addAction(R.drawable.baseline_check_circle_24, "Aceptar", acceptPendingIntent);
-        builder.addAction(R.drawable.baseline_cancel_24, "Rechazar", rejectPendingIntent);
+            builder.addAction(R.drawable.baseline_check_circle_24, "Aceptar", acceptPendingIntent);
+            builder.addAction(R.drawable.baseline_cancel_24, "Rechazar", rejectPendingIntent);
 
-        Notification notification = builder.build();
-        notification.flags |= Notification.FLAG_INSISTENT;
+            Notification notification = builder.build();
+            notification.flags |= Notification.FLAG_INSISTENT;
 
-        NotificationManager notificationManager = context.getSystemService(
+            NotificationManager notificationManager = context.getSystemService(
                 NotificationManager.class);
-        notificationManager.notify(14, notification);
+            notificationManager.notify(14, notification);
+        }
+        
 
 
         sendCallRequestToActivity(ACTION_SHOW_INCOMING_CALL_UI, handle);
