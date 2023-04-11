@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:3:5-31
 		INJECTED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml
@@ -27,20 +27,30 @@ uses-permission#android.permission.MANAGE_OWN_CALLS
 ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:10:5-75
 	android:name
 		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:10:22-72
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:11:22-65
 application
-ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:12:5-19:19
+ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:13:5-23:19
+activity#io.wazo.callkeep.TestActivity
+ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:14:9-16:40
+	android:exported
+		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:16:13-37
+	android:name
+		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:15:13-41
 activity#io.wazo.callkeep.RejectActivity
-ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:13:9-15:40
+ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:17:9-19:40
 	android:exported
-		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:15:13-37
+		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:14:13-43
+		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:18:13-43
 activity#io.wazo.callkeep.AnswerActivity
-ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:16:9-18:40
+ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:20:9-22:40
 	android:exported
-		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:18:13-37
+		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:17:13-43
+		ADDED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:21:13-43
 uses-sdk
 INJECTED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml

@@ -2472,6 +2472,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_answer
 layout activity_reject
+layout activity_test
 layout autofill_inline_suggestion
 layout content_answer
 layout custom_dialog
@@ -3282,6 +3283,7 @@ style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
 style Theme_ReactNative_AppCompat_Light
 style Theme_ReactNative_AppCompat_Light_NoActionBar_FullScreen
+style Theme_Vivook
 style Theme_Vivook_AppBarOverlay
 style Theme_Vivook_NoActionBar
 style Theme_Vivook_PopupOverlay

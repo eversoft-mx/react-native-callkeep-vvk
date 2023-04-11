@@ -24,6 +24,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Icon;
 import android.media.AudioAttributes;
 import android.media.RingtoneManager;
 import android.os.Build;
@@ -58,6 +59,7 @@ import static io.wazo.callkeep.Constants.EXTRA_CALL_UUID;
 import static io.wazo.callkeep.Constants.ACTION_SHOW_INCOMING_CALL_UI;
 import static io.wazo.callkeep.Constants.ACTION_ON_SILENCE_INCOMING_CALL;
 import static io.wazo.callkeep.Constants.ACTION_DID_CHANGE_AUDIO_ROUTE;
+import static io.wazo.callkeep.Constants.FOREGROUND_SERVICE_TYPE_MICROPHONE;
 
 @TargetApi(Build.VERSION_CODES.M)
 public class VoiceConnection extends Connection {
@@ -356,6 +358,12 @@ public class VoiceConnection extends Connection {
             NotificationManager mgr = context.getSystemService(NotificationManager.class);
             mgr.createNotificationChannel(channel);
 
+            Intent intent = new Intent(Intent.ACTION_MAIN, null);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NO_USER_ACTION | Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setClass(context, TestActivity.class);
+            //intent.putExtra(IncomingSelfManagedCallActivity.EXTRA_CALL_ID, mCallId);
+            PendingIntent pendingIntent = PendingIntent.getActivity(context, 1, intent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
+
             final Notification.Builder builder = new Notification.Builder(context,"INCOMING_CALL_CHANNEL");
             builder.setOngoing(true);
             builder.setPriority(Notification.PRIORITY_HIGH);
@@ -363,6 +371,8 @@ public class VoiceConnection extends Connection {
             builder.setContentTitle("Llamada entrante");
             builder.setContentText(this.name);
             builder.setSmallIcon(R.drawable.baseline_phone_24);
+            builder.setContentIntent(pendingIntent);
+            builder.setFullScreenIntent(pendingIntent,true);
 
             Intent acceptIntent = new Intent(context, AnswerActivity.class);
             acceptIntent.putExtra("call_uuid",this.callUuid);
@@ -372,8 +382,8 @@ public class VoiceConnection extends Connection {
             rejectIntent.putExtra("call_uuid",this.callUuid);
             PendingIntent rejectPendingIntent = PendingIntent.getActivity(context, 0, rejectIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
 
-            builder.addAction(R.drawable.baseline_check_circle_24, "Aceptar", acceptPendingIntent);
-            builder.addAction(R.drawable.baseline_cancel_24, "Rechazar", rejectPendingIntent);
+            builder.addAction(R.drawable.baseline_check_circle_24,"Responder",acceptPendingIntent);
+            builder.addAction(R.drawable.baseline_cancel_24,"Rechazar",rejectPendingIntent);
 
             Notification notification = builder.build();
             notification.flags |= Notification.FLAG_INSISTENT;

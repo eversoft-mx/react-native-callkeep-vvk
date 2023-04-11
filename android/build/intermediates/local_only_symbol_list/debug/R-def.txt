@@ -16,6 +16,7 @@ id textview_first
 id textview_second
 layout activity_answer
 layout activity_reject
+layout activity_test
 layout content_answer
 layout fragment_first
 layout fragment_second
@@ -27,6 +28,7 @@ string next
 string previous
 string second_fragment_label
 string title_activity_answer
+style Theme.Vivook
 style Theme.Vivook.AppBarOverlay
 style Theme.Vivook.NoActionBar
 style Theme.Vivook.PopupOverlay

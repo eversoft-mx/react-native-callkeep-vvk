@@ -2471,6 +2471,7 @@ int layout abc_select_dialog_material 0x0
 int layout abc_tooltip 0x0
 int layout activity_answer 0x0
 int layout activity_reject 0x0
+int layout activity_test 0x0
 int layout autofill_inline_suggestion 0x0
 int layout content_answer 0x0
 int layout custom_dialog 0x0
@@ -3281,6 +3282,7 @@ int style Theme_MaterialComponents_NoActionBar 0x0
 int style Theme_MaterialComponents_NoActionBar_Bridge 0x0
 int style Theme_ReactNative_AppCompat_Light 0x0
 int style Theme_ReactNative_AppCompat_Light_NoActionBar_FullScreen 0x0
+int style Theme_Vivook 0x0
 int style Theme_Vivook_AppBarOverlay 0x0
 int style Theme_Vivook_NoActionBar 0x0
 int style Theme_Vivook_PopupOverlay 0x0
