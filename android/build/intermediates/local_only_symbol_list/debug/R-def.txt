@@ -8,6 +8,8 @@ id FirstFragment
 id SecondFragment
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
+id button
+id button2
 id button_first
 id button_second
 id nav_graph

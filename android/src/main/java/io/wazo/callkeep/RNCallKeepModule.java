@@ -126,6 +126,7 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
     private static WritableMap _settings;
     private WritableNativeArray delayedEvents;
     private boolean hasListeners = false;
+    private static TestActivity instanceTest;
 
     public static RNCallKeepModule getInstance(ReactApplicationContext reactContext, boolean realContext) {
         if (instance == null) {
@@ -431,7 +432,9 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
         }
 
          */
-
+        if(TestActivity.isMainActivityRunning){
+            TestActivity.closeActivity();
+        }
         ArrayList<Map.Entry<String, VoiceConnection>> connections =
             new ArrayList<Map.Entry<String, VoiceConnection>>(VoiceConnectionService.currentConnections.entrySet());
         for (Map.Entry<String, VoiceConnection> connectionEntry : connections) {

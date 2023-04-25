@@ -2034,6 +2034,8 @@ id bestChoice
 id blocking
 id bottom
 id bounce
+id button
+id button2
 id buttonPanel
 id button_first
 id button_second

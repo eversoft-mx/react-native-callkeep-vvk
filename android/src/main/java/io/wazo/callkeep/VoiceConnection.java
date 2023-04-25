@@ -18,6 +18,7 @@
 package io.wazo.callkeep;
 
 import android.annotation.TargetApi;
+import android.app.ActivityManager;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -44,6 +45,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.List;
 
 import static io.wazo.callkeep.Constants.ACTION_ANSWER_CALL;
 import static io.wazo.callkeep.Constants.ACTION_AUDIO_SESSION;
@@ -361,30 +363,32 @@ public class VoiceConnection extends Connection {
             Intent intent = new Intent(Intent.ACTION_MAIN, null);
             intent.setFlags(Intent.FLAG_ACTIVITY_NO_USER_ACTION | Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.setClass(context, TestActivity.class);
-            //intent.putExtra(IncomingSelfManagedCallActivity.EXTRA_CALL_ID, mCallId);
+            intent.putExtra("call_uuid",this.callUuid);
             PendingIntent pendingIntent = PendingIntent.getActivity(context, 1, intent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
 
             final Notification.Builder builder = new Notification.Builder(context,"INCOMING_CALL_CHANNEL");
             builder.setOngoing(true);
             builder.setPriority(Notification.PRIORITY_HIGH);
             builder.setCategory(NotificationCompat.CATEGORY_CALL);
-            builder.setContentTitle("Llamada entrante");
+            builder.setContentTitle("Llamada");
             builder.setContentText(this.name);
             builder.setSmallIcon(R.drawable.baseline_phone_24);
             builder.setContentIntent(pendingIntent);
             builder.setFullScreenIntent(pendingIntent,true);
+            builder.setSubText("Toca la notificacion");
+            builder.setAutoCancel(true);
+            /*
+                Intent acceptIntent = new Intent(context, AnswerActivity.class);
+                acceptIntent.putExtra("call_uuid",this.callUuid);
+                PendingIntent acceptPendingIntent = PendingIntent.getActivity(context, 0, acceptIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
 
-            Intent acceptIntent = new Intent(context, AnswerActivity.class);
-            acceptIntent.putExtra("call_uuid",this.callUuid);
-            PendingIntent acceptPendingIntent = PendingIntent.getActivity(context, 0, acceptIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
+                Intent rejectIntent = new Intent(context, RejectActivity.class);
+                rejectIntent.putExtra("call_uuid",this.callUuid);
+                PendingIntent rejectPendingIntent = PendingIntent.getActivity(context, 0, rejectIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
 
-            Intent rejectIntent = new Intent(context, RejectActivity.class);
-            rejectIntent.putExtra("call_uuid",this.callUuid);
-            PendingIntent rejectPendingIntent = PendingIntent.getActivity(context, 0, rejectIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
-
-            builder.addAction(R.drawable.baseline_check_circle_24,"Responder",acceptPendingIntent);
-            builder.addAction(R.drawable.baseline_cancel_24,"Rechazar",rejectPendingIntent);
-
+                builder.addAction(R.drawable.baseline_check_circle_24,"Responder",acceptPendingIntent);
+                builder.addAction(R.drawable.baseline_cancel_24,"Rechazar",rejectPendingIntent);
+             */
             Notification notification = builder.build();
             notification.flags |= Notification.FLAG_INSISTENT;
 
@@ -396,6 +400,22 @@ public class VoiceConnection extends Connection {
 
 
         sendCallRequestToActivity(ACTION_SHOW_INCOMING_CALL_UI, handle);
+    }
+
+    public boolean isAppRunning() {
+        boolean isRunning = false;
+        ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningAppProcessInfo> runningProcesses = activityManager.getRunningAppProcesses();
+        String packageName = context.getPackageName();
+
+        for (ActivityManager.RunningAppProcessInfo processInfo : runningProcesses) {
+            if (processInfo.processName.equals(packageName)) {
+                isRunning = true;
+                break;
+            }
+        }
+
+        return isRunning;
     }
 
     /*
