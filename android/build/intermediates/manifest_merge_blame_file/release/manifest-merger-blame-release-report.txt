@@ -1,0 +1,55 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.wazo.callkeep" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="33" />
+7-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.CALL_PHONE" />
+9-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:5:5-69
+9-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:5:22-66
+10    <uses-permission
+10-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:6:5-8:38
+11        android:name="android.permission.READ_PHONE_STATE"
+11-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:7:9-59
+12        android:maxSdkVersion="29" />
+12-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:8:9-35
+13    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+13-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:9:5-77
+13-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:9:22-74
+14    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+14-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:10:5-75
+14-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:10:22-72
+15    <uses-permission android:name="android.permission.VIBRATE" />
+15-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:11:5-66
+15-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:11:22-63
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:12:5-68
+16-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:12:22-65
+17
+18    <application>
+18-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:14:5-24:19
+19        <activity
+19-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:15:9-17:40
+20            android:name="io.wazo.callkeep.TestActivity"
+20-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:16:13-41
+21            android:exported="false" />
+21-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:17:13-37
+22        <activity
+22-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:18:9-20:40
+23            android:name="io.wazo.callkeep.RejectActivity"
+23-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:19:13-43
+24            android:exported="false" />
+24-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:20:13-37
+25        <activity
+25-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:21:9-23:40
+26            android:name="io.wazo.callkeep.AnswerActivity"
+26-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:22:13-43
+27            android:exported="false" />
+27-->/Users/danielmaximilianoramirezelias/Desktop/vivook/app/node_modules/react-native-callkeep/android/src/main/AndroidManifest.xml:23:13-37
+28    </application>
+29
+30</manifest>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout-sw600dp-v13/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout-sw600dp-v13/mtrl_layout_snackbar.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout-sw600dp-v13/mtrl_layout_snackbar.xml"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout-v21/notification_template_custom_big.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-core-1.9.0-10:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout-v21/notification_action_tombstone.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-core-1.9.0-10:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout-v21/notification_template_icon_group.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-core-1.9.0-10:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout-v21/notification_action.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-core-1.9.0-10:/layout-v21/notification_action.xml"
+    }
+]

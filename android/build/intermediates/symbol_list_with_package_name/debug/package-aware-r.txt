@@ -1872,6 +1872,9 @@ drawable abc_vector_test
 drawable autofill_inline_suggestion_chip_background
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_account_circle_24
+drawable baseline_call_24
+drawable baseline_call_end_24
 drawable baseline_cancel_24
 drawable baseline_check_circle_24
 drawable baseline_phone_24
@@ -1888,6 +1891,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable gradient_line
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_mtrl_checked_circle
@@ -1928,6 +1932,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable redbox_top_border_background
+drawable rounded_button
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2015,6 +2020,7 @@ id aligned
 id allStates
 id animateToEnd
 id animateToStart
+id answer_button
 id antiClockwise
 id anticipate
 id arc
@@ -2034,12 +2040,12 @@ id bestChoice
 id blocking
 id bottom
 id bounce
-id button
-id button2
 id buttonPanel
 id button_first
 id button_second
 id callMeasure
+id caller_name_textview
+id caller_photo_imageview
 id cancel_button
 id carryVelocity
 id catalyst_redbox_title
@@ -2138,6 +2144,8 @@ id ignoreRequest
 id image
 id immediateStop
 id included
+id incoming_call_layout
+id incoming_call_textview
 id info
 id invisible
 id inward
@@ -2262,6 +2270,7 @@ id progress_horizontal
 id radio
 id react_test_id
 id rectangles
+id reject_button
 id reverseSawtooth
 id right
 id rightToLeft

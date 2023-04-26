@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout-v26/abc_screen_toolbar.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout-v26/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout-v26/mtrl_calendar_month.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout-v26/mtrl_calendar_month.xml"
+    }
+]

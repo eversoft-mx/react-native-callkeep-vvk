@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/drawable-v23/mtrl_popupmenu_background_dark.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/drawable-v23/mtrl_popupmenu_background_dark.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/drawable-v23/abc_control_background_material.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/drawable-v23/abc_control_background_material.xml"
+    }
+]

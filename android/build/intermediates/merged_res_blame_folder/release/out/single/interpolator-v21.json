@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/interpolator-v21/mtrl_fast_out_slow_in.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/interpolator-v21/mtrl_fast_out_slow_in.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/interpolator-v21/mtrl_fast_out_linear_in.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/interpolator-v21/mtrl_fast_out_linear_in.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/interpolator-v21/mtrl_linear_out_slow_in.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/interpolator-v21/mtrl_linear_out_slow_in.xml"
+    }
+]

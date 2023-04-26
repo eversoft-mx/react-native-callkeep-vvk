@@ -1,44 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/incoming_call_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TestActivity">
+    android:background="#808080">
 
-    <Button
-        android:id="@+id/button"
+    <ImageView
+        android:id="@+id/caller_photo_imageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/caller_name_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/incoming_call_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginEnd="242dp"
-        android:layout_marginBottom="302dp"
-        android:onClick="AnswerCall"
-        android:text="Responder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Llamada entrante"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button2"
+    <TextView
+        android:id="@+id/caller_name_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="225dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="302dp"
-        android:text="Colgar"
+        android:layout_below="@+id/incoming_call_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Juan Perez"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/reject_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#FF0000"
         android:onClick="RejectCall"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/baseline_call_end_24" />
+
+    <ImageButton
+        android:id="@+id/answer_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#4CAF50"
+        android:onClick="AnswerCall"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/baseline_call_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:background="@drawable/gradient_line"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:background="#241D1E"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</RelativeLayout>

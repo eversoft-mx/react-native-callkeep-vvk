@@ -1,0 +1,510 @@
+[
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_clock_display.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_clock_display.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_action_menu_layout.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_layout_snackbar.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/redbox_item_frame.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-jetified-react-native-0.70.6-release-20:/layout/redbox_item_frame.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_picker_header_title_text.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_picker_header_title_text.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_navigation_item_separator.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/test_reflow_chipgroup.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/test_reflow_chipgroup.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_screen_toolbar.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_alert_select_dialog_multichoice.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_alert_select_dialog_multichoice.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-mergeReleaseResources-42:/layout/fragment_first.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-main-44:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_timepicker_textinput_display.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_timepicker_textinput_display.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_picker_text_input_date_range.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_picker_text_input_date_range.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/dev_loading_view.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-jetified-react-native-0.70.6-release-20:/layout/dev_loading_view.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-mergeReleaseResources-42:/layout/activity_reject.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-main-44:/layout/activity_reject.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_layout_snackbar_include.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_clockface_textview.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_clockface_textview.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_picker_dialog.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_picker_dialog.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_calendar_year.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_calendar_year.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_timepicker_dialog.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_timepicker_dialog.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/activity_test.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-main-44:/layout/activity_test.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/notification_template_part_time.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-core-1.9.0-10:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_layout_snackbar_include.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/content_answer.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-main-44:/layout/content_answer.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_navigation_rail_item.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_navigation_rail_item.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_navigation_item_header.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_alert_dialog_actions.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_alert_dialog_actions.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/test_navigation_bar_item_layout.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/test_navigation_bar_item_layout.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/activity_test.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-main-44:/layout/activity_test.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/test_design_radiobutton.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/test_design_radiobutton.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/select_dialog_item_material.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_time_chip.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_time_chip.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/test_design_checkbox.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/test_design_checkbox.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_calendar_month_labeled.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_calendar_month_labeled.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/text_view_without_line_height.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/text_view_without_line_height.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_textinput_timepicker.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_textinput_timepicker.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_alert_select_dialog_item.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_alert_select_dialog_item.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_chip_input_combo.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_chip_input_combo.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_bottom_sheet_dialog.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_screen_content_include.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_clockface_view.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_clockface_view.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_picker_actions.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_picker_actions.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/test_toolbar_surface.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/test_toolbar_surface.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_picker_header_selection_text.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_picker_header_selection_text.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_navigation_menu_item.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/fps_view.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-jetified-react-native-0.70.6-release-20:/layout/fps_view.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-mergeReleaseResources-42:/layout/activity_answer.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-main-44:/layout/activity_answer.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_picker_header_dialog.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_picker_header_dialog.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-mergeReleaseResources-42:/layout/fragment_second.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-main-44:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_calendar_days_of_week.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_calendar_days_of_week.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/text_view_with_line_height_from_style.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/text_view_with_line_height_from_style.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/activity_answer.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-main-44:/layout/activity_answer.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_screen_simple.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/autofill_inline_suggestion.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-jetified-autofill-1.1.0-29:/layout/autofill_inline_suggestion.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_bottom_navigation_item.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_picker_header_fullscreen.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_picker_header_fullscreen.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/text_view_with_line_height_from_appearance.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/text_view_with_line_height_from_appearance.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_clock_display_divider.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_clock_display_divider.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/redbox_view.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-jetified-react-native-0.70.6-release-20:/layout/redbox_view.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/redbox_item_title.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-jetified-react-native-0.70.6-release-20:/layout/redbox_item_title.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_text_input_start_icon.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_text_input_start_icon.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_calendar_vertical.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_calendar_vertical.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_radial_view_group.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_radial_view_group.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/text_view_with_line_height_from_layout.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/text_view_with_line_height_from_layout.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/fragment_first.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-main-44:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_calendar_horizontal.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_calendar_horizontal.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/custom_dialog.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-core-1.9.0-10:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/activity_reject.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-main-44:/layout/activity_reject.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/test_toolbar_elevation.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/test_toolbar_elevation.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-mergeReleaseResources-42:/layout/activity_test.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-main-44:/layout/activity_test.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_menu_item_action_area.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_clock_period_toggle.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_clock_period_toggle.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_calendar_day.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_calendar_day.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/fragment_second.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-main-44:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_alert_dialog_title_material.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_cascading_menu_item_layout.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_cascading_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-mergeReleaseResources-42:/layout/content_answer.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-main-44:/layout/content_answer.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_calendar_month.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_calendar_month.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_text_input_end_icon.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_text_input_end_icon.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_layout_tab_text.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_navigation_item.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_alert_dialog.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_alert_dialog.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/test_action_chip.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/test_action_chip.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_picker_fullscreen.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_picker_fullscreen.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_alert_select_dialog_singlechoice.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_alert_select_dialog_singlechoice.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_alert_dialog_title.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_alert_dialog_title.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_picker_header_toggle.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_picker_header_toggle.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_select_dialog_material.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_navigation_menu.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_action_mode_bar.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_timepicker.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_timepicker.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-core-1.9.0-10:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/test_chip_zero_corner_radius.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/test_chip_zero_corner_radius.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_navigation_item_subheader.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_calendar_months.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_calendar_months.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-mergeReleaseResources-42:/layout/activity_test.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-main-44:/layout/activity_test.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_picker_text_input_date.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_picker_text_input_date.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/test_toolbar.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/test_toolbar.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/material_time_input.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/material_time_input.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_tooltip.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_tooltip.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_search_view.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_layout_snackbar.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/design_layout_tab_icon.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_calendar_day_of_week.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_calendar_day_of_week.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/abc_dialog_title_material.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-appcompat-1.6.1-19:/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/text_view_with_theme_line_height.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/text_view_with_theme_line_height.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/test_toolbar_custom_background.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/test_toolbar_custom_background.xml"
+    },
+    {
+        "merged": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout/mtrl_calendar_month_navigation.xml",
+        "source": "/Users/danielmaximilianoramirezelias/.gradle/daemon/7.5.1/io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout/mtrl_calendar_month_navigation.xml"
+    }
+]

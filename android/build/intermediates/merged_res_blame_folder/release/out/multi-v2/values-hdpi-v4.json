@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/danielmaximilianoramirezelias/.gradle/caches/transforms-3/7fccedc3e88f5e6c2b3d3f446f135f4c/transformed/appcompat-1.6.1/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "io.wazo.callkeep.react-native-callkeep-mergeReleaseResources-41:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/danielmaximilianoramirezelias/.gradle/caches/transforms-3/7fccedc3e88f5e6c2b3d3f446f135f4c/transformed/appcompat-1.6.1/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout-land/material_clock_period_toggle_land.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout-land/material_clock_period_toggle_land.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout-land/material_timepicker.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout-land/material_timepicker.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/layout-land/mtrl_picker_header_dialog.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/layout-land/mtrl_picker_header_dialog.xml"
+    }
+]

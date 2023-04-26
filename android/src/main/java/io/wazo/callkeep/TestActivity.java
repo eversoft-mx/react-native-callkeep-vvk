@@ -8,40 +8,39 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
-import android.media.AudioManager;
-import android.media.Ringtone;
-import android.media.RingtoneManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.HashMap;
 
 public class TestActivity extends AppCompatActivity {
     public static boolean isMainActivityRunning = false;
     private static TestActivity activityInstance;
-    private Ringtone ringtone;
-    private Vibrator vibrator;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
+        Intent intentExtras = getIntent();
+        String name = intentExtras.getStringExtra("caller_name");
+        TextView myTextView = findViewById(R.id.caller_name_textview);
+        myTextView.setText(name);
         isMainActivityRunning = true;
         activityInstance = this;
-        Vibrator vibrator = (Vibrator) getSystemService(this.VIBRATOR_SERVICE);
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        // Vibrate for 500 milliseconds
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            vibrator.vibrate((VibrationEffect.createOneShot(500, VibrationEffect.DEFAULT_AMPLITUDE)));
-        }else{
-            vibrator.vibrate(1000);
+            v.vibrate(VibrationEffect.createOneShot(500, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
+            //deprecated in API 26
+            v.vibrate(500);
         }
-        ringtone = RingtoneManager.getRingtone(this, RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE));
-        ringtone.play();
         /*
         AudioManager audioManager = (AudioManager) getSystemService(this.AUDIO_SERVICE);
         boolean isVibrateOn = audioManager.getRingerMode() == AudioManager.RINGER_MODE_VIBRATE;
@@ -115,13 +114,6 @@ public class TestActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         isMainActivityRunning = false;
-        if(ringtone != null){
-            ringtone.stop();
-        }
-        if(vibrator != null){
-            vibrator.cancel();
-        }
-
     }
 
     public static void closeActivity() {

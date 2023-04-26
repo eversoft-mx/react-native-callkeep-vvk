@@ -364,6 +364,8 @@ public class VoiceConnection extends Connection {
             intent.setFlags(Intent.FLAG_ACTIVITY_NO_USER_ACTION | Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.setClass(context, TestActivity.class);
             intent.putExtra("call_uuid",this.callUuid);
+            intent.putExtra("caller_name",this.name);
+
             PendingIntent pendingIntent = PendingIntent.getActivity(context, 1, intent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
 
             final Notification.Builder builder = new Notification.Builder(context,"INCOMING_CALL_CHANNEL");
@@ -376,7 +378,6 @@ public class VoiceConnection extends Connection {
             builder.setContentIntent(pendingIntent);
             builder.setFullScreenIntent(pendingIntent,true);
             builder.setSubText("Toca la notificacion");
-            builder.setAutoCancel(true);
             /*
                 Intent acceptIntent = new Intent(context, AnswerActivity.class);
                 acceptIntent.putExtra("call_uuid",this.callUuid);

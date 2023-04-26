@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "map": [
+                {
+                    "source": "/Users/danielmaximilianoramirezelias/.gradle/caches/transforms-3/4a92237dc545524ec13a24642751633d/transformed/material-1.4.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,191",
+                        "endColumns": "135,140",
+                        "endOffsets": "186,327"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "io.wazo.callkeep.react-native-callkeep-mergeReleaseResources-41:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "map": [
+                {
+                    "source": "/Users/danielmaximilianoramirezelias/.gradle/caches/transforms-3/4a92237dc545524ec13a24642751633d/transformed/material-1.4.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,191",
+                        "endColumns": "135,140",
+                        "endOffsets": "186,327"
+                    }
+                }
+            ]
+        }
+    ]
+}

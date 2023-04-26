@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/xml/standalone_badge_gravity_bottom_end.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/xml/standalone_badge_gravity_bottom_end.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/xml/rn_dev_preferences.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-jetified-react-native-0.70.6-release-20:/xml/rn_dev_preferences.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/xml/standalone_badge_offset.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/xml/standalone_badge_offset.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/xml/standalone_badge.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/xml/standalone_badge.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/xml/standalone_badge_gravity_top_start.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/xml/standalone_badge_gravity_top_start.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/xml/standalone_badge_gravity_bottom_start.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/xml/standalone_badge_gravity_bottom_start.xml"
+    }
+]

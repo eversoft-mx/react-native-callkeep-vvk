@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/anim-v21/mtrl_bottom_sheet_slide_in.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/anim-v21/mtrl_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/anim-v21/fragment_fast_out_extra_slow_in.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-fragment-1.4.1-23:/anim-v21/fragment_fast_out_extra_slow_in.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/anim-v21/mtrl_bottom_sheet_slide_out.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/anim-v21/mtrl_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "io.wazo.callkeep.react-native-callkeep-merged_res-43:/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "io.wazo.callkeep.react-native-callkeep-material-1.4.0-14:/anim-v21/design_bottom_sheet_slide_out.xml"
+    }
+]
