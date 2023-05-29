@@ -346,9 +346,22 @@ public class VoiceConnection extends Connection {
         destroy();
     }
 
+    public static boolean isAppInForeground(Context context, String packageName) {
+        ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        if (activityManager != null) {
+            for (ActivityManager.RunningAppProcessInfo processInfo : activityManager.getRunningAppProcesses()) {
+                if (processInfo.processName.equals(packageName) && processInfo.importance == ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
     @Override
     public void onShowIncomingCallUi() {
         Log.d(TAG, "[VoiceConnection] onShowIncomingCallUi");
+        boolean isAppInForeground = isAppInForeground(context, "com.vivook");
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             NotificationChannel channel = new NotificationChannel("INCOMING_CALL_CHANNEL", "Incoming Calls", NotificationManager.IMPORTANCE_HIGH);
@@ -378,7 +391,8 @@ public class VoiceConnection extends Connection {
             builder.setContentIntent(pendingIntent);
             builder.setFullScreenIntent(pendingIntent,true);
             builder.setSubText("Toca la notificacion");
-            /*
+
+            if(isAppInForeground){
                 Intent acceptIntent = new Intent(context, AnswerActivity.class);
                 acceptIntent.putExtra("call_uuid",this.callUuid);
                 PendingIntent acceptPendingIntent = PendingIntent.getActivity(context, 0, acceptIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
@@ -389,7 +403,8 @@ public class VoiceConnection extends Connection {
 
                 builder.addAction(R.drawable.baseline_check_circle_24,"Responder",acceptPendingIntent);
                 builder.addAction(R.drawable.baseline_cancel_24,"Rechazar",rejectPendingIntent);
-             */
+            }
+
             Notification notification = builder.build();
             notification.flags |= Notification.FLAG_INSISTENT;
 
@@ -401,22 +416,6 @@ public class VoiceConnection extends Connection {
 
 
         sendCallRequestToActivity(ACTION_SHOW_INCOMING_CALL_UI, handle);
-    }
-
-    public boolean isAppRunning() {
-        boolean isRunning = false;
-        ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
-        List<ActivityManager.RunningAppProcessInfo> runningProcesses = activityManager.getRunningAppProcesses();
-        String packageName = context.getPackageName();
-
-        for (ActivityManager.RunningAppProcessInfo processInfo : runningProcesses) {
-            if (processInfo.processName.equals(packageName)) {
-                isRunning = true;
-                break;
-            }
-        }
-
-        return isRunning;
     }
 
     /*
