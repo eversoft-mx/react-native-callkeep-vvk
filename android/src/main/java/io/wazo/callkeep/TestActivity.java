@@ -33,28 +33,6 @@ public class TestActivity extends AppCompatActivity {
         myTextView.setText(name);
         isMainActivityRunning = true;
         activityInstance = this;
-        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        // Vibrate for 500 milliseconds
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            v.vibrate(VibrationEffect.createOneShot(500, VibrationEffect.DEFAULT_AMPLITUDE));
-        } else {
-            //deprecated in API 26
-            v.vibrate(500);
-        }
-        /*
-        AudioManager audioManager = (AudioManager) getSystemService(this.AUDIO_SERVICE);
-        boolean isVibrateOn = audioManager.getRingerMode() == AudioManager.RINGER_MODE_VIBRATE;
-        if(isVibrateOn){
-            Vibrator vibrator = (Vibrator) getSystemService(this.VIBRATOR_SERVICE);
-            long[] pattern = { 500, 500 };
-            vibrator.vibrate(pattern, -1);
-            //vibrator.vibrate(VibrationEffect.createWaveform(pattern, repeat));
-        }else{
-            ringtone = RingtoneManager.getRingtone(this, RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE));
-            ringtone.play();
-        }
-
-         */
 
     }
 

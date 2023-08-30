@@ -23,16 +23,15 @@ import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.app.Person;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Icon;
 import android.media.AudioAttributes;
 import android.media.RingtoneManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.annotation.Nullable;
-import androidx.core.app.NotificationCompat;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.telecom.CallAudioState;
 import android.telecom.Connection;
@@ -40,13 +39,7 @@ import android.telecom.DisconnectCause;
 import android.telecom.TelecomManager;
 import android.net.Uri;
 import android.util.Log;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.HashMap;
-import java.util.List;
-
 import static io.wazo.callkeep.Constants.ACTION_ANSWER_CALL;
 import static io.wazo.callkeep.Constants.ACTION_AUDIO_SESSION;
 import static io.wazo.callkeep.Constants.ACTION_DTMF_TONE;
@@ -147,6 +140,8 @@ public class VoiceConnection extends Connection {
     public void onDisconnect() {
         super.onDisconnect();
         setDisconnected(new DisconnectCause(DisconnectCause.LOCAL));
+        NotificationManager notificationManager = context.getSystemService(NotificationManager.class);
+        notificationManager.cancel(14);
         sendCallRequestToActivity(ACTION_END_CALL, handle);
         Log.d(TAG, "[VoiceConnection] onDisconnect executed");
         try {
@@ -187,6 +182,8 @@ public class VoiceConnection extends Connection {
     public void onAbort() {
         super.onAbort();
         setDisconnected(new DisconnectCause(DisconnectCause.REJECTED));
+        NotificationManager notificationManager = context.getSystemService(NotificationManager.class);
+        notificationManager.cancel(14);
         sendCallRequestToActivity(ACTION_END_CALL, handle);
         Log.d(TAG, "[VoiceConnection] onAbort executed");
         try {
@@ -336,6 +333,8 @@ public class VoiceConnection extends Connection {
         rejected = true;
 
         setDisconnected(new DisconnectCause(DisconnectCause.REJECTED));
+        NotificationManager notificationManager = context.getSystemService(NotificationManager.class);
+        notificationManager.cancel(14);
         sendCallRequestToActivity(ACTION_END_CALL, handle);
         Log.d(TAG, "[VoiceConnection] onReject executed");
         try {
@@ -361,55 +360,50 @@ public class VoiceConnection extends Connection {
     @Override
     public void onShowIncomingCallUi() {
         Log.d(TAG, "[VoiceConnection] onShowIncomingCallUi");
-        boolean isAppInForeground = isAppInForeground(context, "com.vivook");
+        //boolean isAppInForeground = isAppInForeground(context, "com.vivook");
+        NotificationManager notificationManager = context.getSystemService(
+                NotificationManager.class);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             NotificationChannel channel = new NotificationChannel("INCOMING_CALL_CHANNEL", "Incoming Calls", NotificationManager.IMPORTANCE_HIGH);
             Uri ringtoneUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
-            channel.setSound(ringtoneUri, new AudioAttributes.Builder()
-                .setUsage(AudioAttributes.USAGE_NOTIFICATION_RINGTONE)
-                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
-                .build());
-            NotificationManager mgr = context.getSystemService(NotificationManager.class);
-            mgr.createNotificationChannel(channel);
 
+            channel.setSound(ringtoneUri, new AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_NOTIFICATION_RINGTONE)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                    .build());
+
+            notificationManager.createNotificationChannel(channel);
+
+            Person incoming_caller = new Person.Builder()
+                    .setName(this.name)
+                    .setImportant(true)
+                    .build();
             Intent intent = new Intent(Intent.ACTION_MAIN, null);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             intent.setClass(context, TestActivity.class);
             intent.putExtra("call_uuid",this.callUuid);
             intent.putExtra("caller_name",this.name);
 
+            Intent acceptIntent = new Intent(context, AnswerActivity.class);
+            acceptIntent.putExtra("call_uuid",this.callUuid);
+            PendingIntent acceptPendingIntent = PendingIntent.getActivity(context, 0, acceptIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
+
+            Intent rejectIntent = new Intent(context, RejectActivity.class);
+            rejectIntent.putExtra("call_uuid",this.callUuid);
+            PendingIntent rejectPendingIntent = PendingIntent.getActivity(context, 0, rejectIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
+
             PendingIntent pendingIntent = PendingIntent.getActivity(context, 1, intent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
-
-            final Notification.Builder builder = new Notification.Builder(context,"INCOMING_CALL_CHANNEL");
-            builder.setOngoing(true);
-            builder.setPriority(Notification.PRIORITY_HIGH);
-            builder.setCategory(NotificationCompat.CATEGORY_CALL);
-            builder.setContentTitle("Llamada");
-            builder.setContentText(this.name);
-            builder.setSmallIcon(R.drawable.baseline_phone_24);
-            builder.setContentIntent(pendingIntent);
-            builder.setFullScreenIntent(pendingIntent,true);
-            builder.setSubText("Toca la notificacion");
-
-            if(isAppInForeground){
-                Intent acceptIntent = new Intent(context, AnswerActivity.class);
-                acceptIntent.putExtra("call_uuid",this.callUuid);
-                PendingIntent acceptPendingIntent = PendingIntent.getActivity(context, 0, acceptIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
-
-                Intent rejectIntent = new Intent(context, RejectActivity.class);
-                rejectIntent.putExtra("call_uuid",this.callUuid);
-                PendingIntent rejectPendingIntent = PendingIntent.getActivity(context, 0, rejectIntent, PendingIntent.FLAG_MUTABLE + PendingIntent.FLAG_UPDATE_CURRENT);
-
-                builder.addAction(R.drawable.baseline_check_circle_24,"Responder",acceptPendingIntent);
-                builder.addAction(R.drawable.baseline_cancel_24,"Rechazar",rejectPendingIntent);
-            }
-
+            Notification.Builder builder = new Notification.Builder(context, "INCOMING_CALL_CHANNEL")
+                    .setContentIntent(pendingIntent)
+                    .setSmallIcon(R.drawable.baseline_phone_24)
+                    .setFullScreenIntent(pendingIntent,true)
+                    .setStyle(
+                            Notification.CallStyle.forIncomingCall(incoming_caller, rejectPendingIntent, acceptPendingIntent))
+                    .addPerson(incoming_caller);
             Notification notification = builder.build();
             notification.flags |= Notification.FLAG_INSISTENT;
 
-            NotificationManager notificationManager = context.getSystemService(
-                NotificationManager.class);
             notificationManager.notify(14, notification);
         }
         
